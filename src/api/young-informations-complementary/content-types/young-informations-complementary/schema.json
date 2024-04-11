@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "young_informations_complementaries",
+  "info": {
+    "singularName": "young-informations-complementary",
+    "pluralName": "young-informations-complementaries",
+    "displayName": "YoungInformationsComplementary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "situation": {
+      "type": "enumeration",
+      "enum": [
+        "je suis a la rue ",
+        "je viens de sortir de l'ase"
+      ]
+    }
+  }
+}

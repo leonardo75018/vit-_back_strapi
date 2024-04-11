@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organization_informations_complementaries",
+  "info": {
+    "singularName": "organization-informations-complementary",
+    "pluralName": "organization-informations-complementaries",
+    "displayName": "OrganizationInformationsComplementary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "location": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "siteUrl": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "organization_informations_complementary"
+    }
+  }
+}
